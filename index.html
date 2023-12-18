@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product.css">
+    <title>Produc Page </title>
+</head>
+<body>
+     <div class="container">
+        <!-- nav-bar -->         
+         <nav>
+           <div class="nav_container">
+               <div class="nav-left-sec">
+                 <img src="./images/icon-menu.svg" alt="menu" class="hidden menu">
+                 <img src="./images/logo.svg" alt="logo" class="nav_logo">
+                 <div class="overlay"></div>
+                 <ul class="nav_links">
+                    <img src="./images/icon-close.svg" alt="close" class="close-btn hidden">
+                    <li class="nav_link" >Collections</li>
+                     <li class="nav_link" >Man</li>
+                    <li class="nav_link" >Woman</li>
+                    <li class="nav_link" >About</li>
+                    <li class="nav_link" >Contact</li>
+                 </ul>
+               </div>
+               <div class="nav_right-sec">
+                <!-- Cart -->
+                  <div class="cart-container">
+                      <button class="cart-btn">
+                         <span class="indicator">  
+                           <img src="./images/icon-cart.svg" alt="cart" class="cart">
+                         </span>
+                      </button>
+                      <div class="cart-wrp invisible">   
+                         <p class="cart-heading">Cart</p>
+                         <div class="divider"></div>
+                         <div class="cart-content empty">
+                            <p>Your cart is Empty</p>
+                         </div>
+                      </div>
+                  </div>
+                  <img src="./images/image-avatar.png" alt="avatar" class="avatar">
+              </div>
+           </div>
+         </nav>
+         <main>
+            <!-- Thmbnails-->
+            <section class="thumbnails">
+                <img src="./images/image-product-1.jpg" alt="product" class="main-thumbnail invisible-mob">
+                <div class="mobile-thumb hidden">
+                  <img src="./images/image-product-1.jpg" alt="product" class="thumb-mob">
+                  <button id="next"><img src="./images/icon-next.svg" alt="next"></button>
+                  <button id="previous"><img src="./images/icon-previous.svg" alt="previous"></button>
+                </div>
+                <div>
+                    <div class="preview">
+                        <img src="./images/image-product-1-thumbnail.jpg" alt="product" class="selected">
+                        <img src="./images/image-product-2-thumbnail.jpg" alt="product" >
+                        <img src="./images/image-product-3-thumbnail.jpg" alt="product" >
+                        <img src="./images/image-product-4-thumbnail.jpg" alt="product" >
+                    </div>
+                </div>
+            </section>
+            <section class="content">
+               <p class="company">Sneaker Company</p>
+               <h1 class="title">Fall Limited Edition Sneakers </h1>
+               <p class="info">
+                These low-profile sneakers are your perfect casual wear comanion.
+                Featuring a Durable ruber outer sole,they;ll withstand Eveything can Offer.
+               </p>
+               <div class="price">
+                 <div class="new-price">
+                    <p class="now">$125.00</p>
+                    <span>50%</span>
+                 </div>
+                 <p class="old-price"> $250.00</p>
+                 
+               </div>
+               <div class="buttons"> 
+                   <div class="amount-btn"> 
+                    <button id="minus">
+                        <img src="./images/icon-minus.svg" alt="minus">
+                    </button>
+                    <p class="amount">0</p>
+                    <button id="plus">
+                        <img src="./images/icon-plus.svg" alt="plus">
+                    </button>
+                   </div>
+                   <button class="add_btn">
+                    <img src="./images/icon-cart.svg" alt="Cart">
+                       add to cart 
+                   </button>
+               </div>
+            </section>
+         </main>
+     </div>
+
+
+    <!-- Lightbox Invisible -->
+    <div class="lightbox invisible">
+         <div class="lightbox-container">
+            <button class="close-lightbox">
+                <img src="./images/icon-close.svg" alt="close">
+            </button>
+            <img src="./images/image-product-1.jpg" alt="main-thumbnail invisible-mob">
+            <div class="preview">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="product" class="selected">  
+              <img src="./images/image-product-2-thumbnail.jpg" alt="product">
+              <img src="./images/image-product-3-thumbnail.jpg" alt="product">
+              <img src="./images/image-product-4-thumbnail.jpg" alt="product">
+
+            </div>
+
+
+
+         </div>
+     
+
+    </div>
+
+  
+
+
+<script src="product.js"></script>
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Mohammed Omer</a>.
+</div>
+
+</body>
+</html>
